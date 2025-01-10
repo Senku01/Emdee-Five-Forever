@@ -19,7 +19,6 @@ def solve_challenge():
 	
             
             # Step 2: Extract the string using regex
-            # This avoids using BeautifulSoup for parsing and speeds up the script
             match = re.search(r"<h3[^>]*>(.*?)</h3>", response.text)
             if not match:
                 print("Error: Unable to find the string in the response.")
